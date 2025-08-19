@@ -30,12 +30,27 @@ ul {
 }
 
 .content-section {
+  display: block !important;
+  width: 100%;
   background: #ffffff;
-  padding: 20px;
-  border: 1px solid #f81d1d;
+  border: 2px solid black !important;
   border-radius: 5px;
+  padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);  
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+article.content-section {
+  display: block !important;        /* override Bootstrap flex */
+  width: 100%;                       /* make full width */
+  background: #ffffff;
+  border: 2px solid black;           /* visible border */
+  border-radius: 5px;
+  padding: 20px;                      /* inner spacing */
+  margin-bottom: 20px;               /* spacing below */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+article.content-section .media-body {
+ display: block; 
 }
 
 .article-title {
